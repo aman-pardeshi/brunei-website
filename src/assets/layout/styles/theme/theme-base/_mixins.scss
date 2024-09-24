@@ -24,7 +24,7 @@
 @mixin focused-listitem() {
     outline: $focusOutline;
     outline-offset: $focusOutlineOffset;
-    box-shadow: $inputListItemFocusShadow;
+    // box-shadow: $inputListItemFocusShadow;
 }
 
 @mixin invalid-input() {

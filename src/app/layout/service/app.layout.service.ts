@@ -33,11 +33,11 @@ export class LayoutService {
     _config: AppConfig = {
         ripple: false,
         inputStyle: 'outlined',
-        menuMode: 'slim',
+        menuMode: 'static',
         colorScheme: 'light',
-        theme: 'indigo',
+        theme: 'blue',
         layoutTheme: 'colorScheme',
-        scale: 14,
+        scale: 16,
     };
 
     config = signal<AppConfig>(this._config);

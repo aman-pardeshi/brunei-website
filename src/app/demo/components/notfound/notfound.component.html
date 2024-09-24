@@ -1,37 +1,53 @@
-<div class="surface-ground h-screen w-screen flex align-items-center justify-content-center">
-    <div class="surface-card py-7 px-5 sm:px-7 shadow-2 flex flex-column w-11 sm:w-30rem" style="border-radius:14px">
-        <h1 class="font-bold text-2xl mt-0 mb-2">NOT FOUND</h1>
-        <p class="text-color-secondary mb-4">Looks like you are lost. You may try these or go back to <a [routerLink]="['/']" class="font-bold text-primary hover:underline">dashboard</a>.</p>
+<div
+  class="d-flex justify-content-center align-items-center min-vh-100 p-5"
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-4 col-md-5">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="text-center w-75 mx-auto auth-logo mb-4">
+              <a href="index.html" class="logo-dark">
+                <span
+                  ><img src="assets/images/logo-dark.png" alt="" height="22"
+                /></span>
+              </a>
 
-        <ul class="list-none p-0 m-0">
-            <li>
-                <a [routerLink]="['/pages/help']" class="flex align-items-center py-2 px-3 hover:surface-hover transition-colors transition-duration-150">
-                    <span class="inline-flex align-items-center justify-content-center flex-shrink-0 border-round bg-yellow-500 text-white w-3rem h-3rem">
-                        <i class="pi pi-compass text-2xl"></i>
-                    </span>
-                    <span class="ml-3">
-                        <span class="mb-2 font-bold text-color">Help Center</span>
-                        <p class="m-0 text-color-secondary">Access knowledge base</p>
-                    </span>
-                    <i class="ml-auto pi pi-chevron-right text-color"></i>
-                </a>
-            </li>
-            <li>
-                <a [routerLink]="['/pages/help']" class="flex align-items-center py-2 px-3 hover:surface-hover transition-colors transition-duration-150">
-                    <span class="inline-flex align-items-center justify-content-center flex-shrink-0 border-round bg-teal-500 text-white w-3rem h-3rem">
-                        <i class="pi pi-user text-2xl"></i>
-                    </span>
-                    <span class="ml-3">
-                        <span class="mb-2 font-bold text-color">Customer Services</span>
-                        <p class="m-0 text-color-secondary">Get instant answers</p>
-                    </span>
-                    <i class="ml-auto pi pi-chevron-right text-color"></i>
-                </a>
-            </li>
-        </ul>
+              <a href="index.html" class="logo-light">
+                <span
+                  ><img src="assets/images/logo-light.png" alt="" height="22"
+                /></span>
+              </a>
+            </div>
 
-        <button [routerLink]="['/']" pButton pRipple label="Go to Dashboard" class="mt-4"></button>
+            <div class="text-center w-50 mx-auto my-4">
+              <img src="/assets/demo/images/404-error.svg" title="invite.svg" width="700px"/>
+            </div>
+
+            <h3 class="text-center mb-4 mt-3">Page Not Found</h3>
+
+            <p class="text-center mt-3">
+              It's looking like you may have taken a wrong turn. Don't worry...
+              it happens to the best of us. You might want to check your
+              internet connection.
+            </p>
+            <div class="mt-4 text-center">
+              <a
+                [routerLink]="['/']"
+                pButton
+                pRipple
+                label="Go to Dashboard"
+                class="mt-4"
+              ></a>
+            </div>
+          </div>
+          <!-- end card-body -->
+        </div>
+        <!-- end card -->
+      </div>
+      <!-- end col -->
     </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
 </div>
-
-<app-config [minimal]="true"></app-config>
